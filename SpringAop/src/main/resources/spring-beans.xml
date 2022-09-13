@@ -16,5 +16,9 @@
 	</bean>
 
 	<bean id="shapeService" class="com.aop.service.ShapeService" autowire="byName" />
+	
+	<bean id="loggingAspect" class="com.aop.aspect.LoggingAspect" />
+	
+	<aop:aspectj-autoproxy />
 
 </beans>    
